@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63F33DD1-5742-467B-A4FA-09ABC1BC820A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>YurtKaSist</RootNamespace>
+    <AssemblyName>YurtKaSist</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminGiris.Designer.cs">
+      <DependentUpon>frmAdminGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnaform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnaform.Designer.cs">
+      <DependentUpon>frmAnaform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBolumler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBolumler.Designer.cs">
+      <DependentUpon>frmBolumler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMetinEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMetinEkle.Designer.cs">
+      <DependentUpon>frmMetinEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOgrenciRaporla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOgrenciRaporla.Designer.cs">
+      <DependentUpon>frmOgrenciRaporla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonel.Designer.cs">
+      <DependentUpon>frmPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYöneticiİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYöneticiİslemleri.Designer.cs">
+      <DependentUpon>frmYöneticiİslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="frmGelirİstatistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGelirİstatistik.Designer.cs">
+      <DependentUpon>frmGelirİstatistik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGider.Designer.cs">
+      <DependentUpon>frmGider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiderGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiderGuncelle.Designer.cs">
+      <DependentUpon>frmGiderGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiderlerListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiderlerListesi.Designer.cs">
+      <DependentUpon>frmGiderlerListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOgrDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOgrDuzenle.Designer.cs">
+      <DependentUpon>frmOgrDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOgrListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOgrListe.Designer.cs">
+      <DependentUpon>frmOgrListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmÖdemeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmÖdemeler.Designer.cs">
+      <DependentUpon>frmÖdemeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sqlbaglantim.cs" />
+    <Compile Include="YurtKayitDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YurtKayitDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YurtKayitDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YurtKayitDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YurtKayitDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YurtKayitDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YurtKayitDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YurtKayitDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YurtKayitDataSet51.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet51.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YurtKayitDataSet61.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet61.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YurtKayitDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YurtKayitDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YurtKayitDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet9.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminGiris.resx">
+      <DependentUpon>frmAdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnaform.resx">
+      <DependentUpon>frmAnaform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBolumler.resx">
+      <DependentUpon>frmBolumler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGelirİstatistik.resx">
+      <DependentUpon>frmGelirİstatistik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGider.resx">
+      <DependentUpon>frmGider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiderGuncelle.resx">
+      <DependentUpon>frmGiderGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiderlerListesi.resx">
+      <DependentUpon>frmGiderlerListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMetinEkle.resx">
+      <DependentUpon>frmMetinEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOgrDuzenle.resx">
+      <DependentUpon>frmOgrDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOgrenciRaporla.resx">
+      <DependentUpon>frmOgrenciRaporla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOgrListe.resx">
+      <DependentUpon>frmOgrListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonel.resx">
+      <DependentUpon>frmPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYöneticiİslemleri.resx">
+      <DependentUpon>frmYöneticiİslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmÖdemeler.resx">
+      <DependentUpon>frmÖdemeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="YurtKayitDataSet.xsc">
+      <DependentUpon>YurtKayitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet.xss">
+      <DependentUpon>YurtKayitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet1.xsc">
+      <DependentUpon>YurtKayitDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet1.xss">
+      <DependentUpon>YurtKayitDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet10.xsc">
+      <DependentUpon>YurtKayitDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet10.xss">
+      <DependentUpon>YurtKayitDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet11.xsc">
+      <DependentUpon>YurtKayitDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet11.xss">
+      <DependentUpon>YurtKayitDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet12.xsc">
+      <DependentUpon>YurtKayitDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet12.xss">
+      <DependentUpon>YurtKayitDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet2.xsc">
+      <DependentUpon>YurtKayitDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet2.xss">
+      <DependentUpon>YurtKayitDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet3.xsc">
+      <DependentUpon>YurtKayitDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet3.xss">
+      <DependentUpon>YurtKayitDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet4.xsc">
+      <DependentUpon>YurtKayitDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet4.xss">
+      <DependentUpon>YurtKayitDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet51.xsc">
+      <DependentUpon>YurtKayitDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet51.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet51.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet51.xss">
+      <DependentUpon>YurtKayitDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet61.xsc">
+      <DependentUpon>YurtKayitDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet61.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet61.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet61.xss">
+      <DependentUpon>YurtKayitDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet7.xsc">
+      <DependentUpon>YurtKayitDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet7.xss">
+      <DependentUpon>YurtKayitDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet8.xsc">
+      <DependentUpon>YurtKayitDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet8.xss">
+      <DependentUpon>YurtKayitDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet9.xsc">
+      <DependentUpon>YurtKayitDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet9.xss">
+      <DependentUpon>YurtKayitDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxRDPCOMAPILib">
+      <Guid>{CC802D05-AE07-4C15-B496-DB9D22AA0A84}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="RDPCOMAPILib">
+      <Guid>{CC802D05-AE07-4C15-B496-DB9D22AA0A84}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
